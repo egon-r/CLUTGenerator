@@ -1,0 +1,30 @@
+        body {
+  text-align:center;
+  background: #111;
+  color: whitesmoke;
+  font-family: Arial,sans-serif;
+}
+
+ul {
+    display: table;
+  margin: 20px auto;
+  width: 100px;
+  padding:0;
+  list-style-type:none;
+  height: 80%;
+  background-color: white;
+}
+
+li {
+  /*border: 1px solid #222;*/
+  /*height: 10px;*/
+  display: table-row;
+  min-height: 2px;
+  background-color: #000;
+  transition:background-color 1s ease-in-out;
+}
+
+li input {
+  position:absolute;
+  right:310px;
+}

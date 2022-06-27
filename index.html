@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <script src="js/jscolor.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>CLUT Generator</title>
+</head>
+
+<body>
+    <h1>CLUT Generator</h1>
+    <div style="float:left">
+        <h3>Preview</h3>
+        <ul id="list">
+            <li id="start"><span></span></li>
+
+            <li id="end"><span></span></li>
+        </ul>
+    </div>
+    <div>
+        <div>From </div>
+        <input id="startinput" class="jscolor" value="#000eac" size="7" onchange="$('#clutsrc').empty();" /><br/>
+        <br/>
+        <div>To </div>
+        <input id="endinput" class="jscolor" value="#ff0000" size="7" onchange="$('#clutsrc').empty();" /><br/>
+        <br/>
+        Array Size: <input type="number" id="numsteps" value="255" min="1" max="999"/><br>
+
+    RGB <input type="radio" name="intype" value="interpolateColor"  onchange="$('#clutsrc').empty();" /> 
+    HSL <input type="radio" name="intype" value="interpolateHSL"  onchange="$('#clutsrc').empty();"        checked/>
+    </div>
+
+    <textarea id="clutsrc" rows="20" cols="50"></textarea>
+</body>
+<script type="text/javascript" src="js/clut-generator.js"></script>
+
+</html>
